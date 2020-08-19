@@ -1,0 +1,300 @@
+html , body
+{
+    background-color:#fff;
+    font-family: "Source Code Pro";
+    overflow-x:hidden !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    height: 100%;
+    width: 100%;
+}
+*
+{
+    text-decoration: none !important;
+}
+/**********************************|NAVIGATION SECTIONS|************************/
+.nav
+{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 80px;
+    flex-direction: row;
+    display : flex ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px 0 25px;
+    background-color:#fff;
+    box-shadow:0 19px 38px rgba(0,0,0,0.10) ;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius:10px ;
+}
+.nav .links a
+{
+    margin-right: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    color:#000
+}
+.nav .links .mainlinks
+{
+    color:#2f8be0;
+}
+.nav .links a:hover
+{
+    color:#2f8be0;
+}
+.nav h4
+{
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 25px;
+    color:#2f8be0;
+}
+.editor
+{
+    left: 0;
+    right: 50px;
+    top:45%;
+    cursor: pointer;
+
+}
+textarea
+{
+    cursor: pointer;
+}
+#image1
+{
+    cursor: pointer;
+    width: 220px;
+
+}
+.about
+{
+    height: 600px;
+    padding: 50px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.aboutText
+{
+    position: relative;
+    padding: 0 50px ;
+    height: inherit;
+}
+.aboutText h1
+{
+    position: relative;
+    left: 110px;
+}
+.aboutText img
+{
+    width: 30vw;
+    position: relative;
+    top: 50px;
+}
+.aboutlist
+{
+    width: 50%;
+}
+ol
+{
+    list-style:none ;
+    color:black;
+    opacity:0.6;
+}
+ol li
+{
+    font-size: 34px;
+    position: relative;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ebebeb;
+}
+li p
+{
+    font-size:16px;
+    color:#000;
+    padding-left:60px ;
+    line-height: 30px;
+    opacity: 0.6;
+}
+li span
+{
+    position: relative;
+    line-height: 25px;
+    font-weight: 600;
+}
+#text_editor
+{
+    cursor:pointer;
+}
+#HTMLEDIT
+{
+    text-align: center;
+}
+.HTMLEdit
+{
+    color:#2f8be0;
+}
+
+
+#iframe
+{
+    height: 100%;
+    display:inline-block;
+    width: 120%;
+    background:   #ebebeb ;
+    cursor: pointer;
+}
+#editor {
+    height: 100%;
+    width:120%;
+    display:inline-block;
+    cursor: pointer;
+}
+.ace_editor .ace_marker-layer .ace_bracket { display: none }
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    width: 170px;
+    height: 60px;
+    background: linear-gradient(45deg,#2f8be0,#19AAD8ff);
+    margin: 0px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+}
+.btn:hover
+{
+    background: #2f8be0;
+}
+#html_panel
+{
+    cursor: pointer;
+    height: 600px;
+    padding: 50px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+
+}
+
+input[onsubmit]{
+    background-color: #2f8be0;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+input:hover
+{
+    background: #2f8be0;
+}
+
+
+/* Style the container/contact section */
+
+
+
+/* Create two columns that float next to eachother */
+.column {
+    align-content:center;
+    width: 50%;
+
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+#message
+{
+    border: #2f8be0   ;
+    border-radius: 2px;
+}
+
+/* ==========================================================================
+	$Footer
+========================================================================== */
+.footer {
+    /*  designing the  location and about portfilo part */
+    text-align: center; }
+.footer-top {
+    background-color: #e0501b;
+    padding-top: 50px; }
+
+/* Copyright design  */
+.footer-bottom {
+    background-color: #e0501b;
+    padding: 20px 0; }
+.footer .footer-col {
+    margin-bottom: 80px; }
+.footer h5 {
+    color: #fff; }
+.footer h5 {
+    margin-bottom: 20px; }
+.footer p {
+    color: rgba(255, 255, 255, 0.5); }
+.footer a {
+    color: #fff; }
+.footer a:hover {
+    color: #e84545; }
+.footer .footer-share {
+    margin-top: 0; }
+.footer .footer-share li {
+    display: inline-block;
+    float: none; }
+.footer .footer-share a {
+    border-width: 2px;
+    color: #fff; }
+.footer .fa-heart {
+    color: #e84545;
+    font-size: 11px;
+    margin: 0 2px; }
+.website
+{
+    text-align: center;
+}
+.website h1 { font-size: 45px;}
+.website p
+{
+    font-size:40px
+}
+#rotate_btn
+{
+    cursor : pointer ;
+}
+#rotate_btn:hover
+{
+    background-color: #e0501b;
+
+}
+
+
+
+

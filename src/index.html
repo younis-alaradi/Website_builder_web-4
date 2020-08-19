@@ -1,0 +1,295 @@
+<!DOCTYPE html >
+<html lang="en">
+
+<head>
+    <title>IT Technology </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="indexStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.9/ace.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+
+
+
+
+
+
+</head>
+<body>
+
+<div class="wrapper">
+
+    <div class="nav">
+        <!----------|LOGO|------------->
+        <div class="logo">
+            <h4>WEBSITE BUILDER </h4>
+        </div>
+        <!---------------------------->
+
+        <!-----mune content------------>
+        <div class="links">
+            <a href="#" class="mainlinks">IT trainee</a>
+            <a href="#About_div">About</a>
+            <a href="#text_editor" >Text Editor </a>
+            <a href="#html_panel" >HTML  </a>
+
+
+            <a href="#message" >contact</a>
+        </div>
+        <!----------------------------->
+
+    </div>
+<hr>
+    <div class="about" id="About_div">
+        <div class="aboutText">
+            <h1>Wlcome to IT trainee <br><span style="color:#2f8be0; font-size: 3vw"> Website builder </span> </h1>
+            <img src="Images/IT_ICON.png" id="image1" >
+
+        </div>
+        <div class="aboutlist">
+            <ol>
+                <li><span style="color:#2f8be0">1</span> A simple text editor </li>
+                <li><span style="color:#2f8be0">2</span>   Website builder</li>
+                <li><span style="color:#2f8be0">3</span>   Try to create your own website  </li>
+                <li><span style="color:#2f8be0">4</span>  What you what for , work from now </li>
+            </ol>
+
+
+        </div>
+        <button class="btn" id="rotate_btn" onclick="rotate()" > rotate </button>
+    </div>
+    <!-----------------------------------------|Editor|----------------------------------->
+<div class="Editor" id="text_editor">
+
+            <textarea name="content" style="background: #0f74a8" class="Editor" > <p>Building a website used to require learning how to code, but those days are in the past. Now, anybody can easily create a new website using a website builder.
+
+        Whether you own a small business or you are looking to create your own blog, website builders make it so you don’t have to hire a web designer to have a professionally designed site. If you are wondering, “What is a website builder?” you have come to the right place.
+
+        But, hearing that website builders are easy to use doesn’t mean you just automatically know what a website builder is, or how one works. Website builders make it easy for users to make their own website with little effort or coding skills. By using this platform, anyone can achieve a professionally designed site without using a web designer.
+
+        If you’re ready to get your website off the ground, but are stuck at the step of figuring out how to use a website builder, we walk you through the main steps you need to know.</p></textarea>
+      </div>
+</div>
+<!---------------------------------------------| end - editor |-----------------------------
+------------------------|Website |---------------->
+<div class="website" id="website">
+    <h1>Website <span style="color:#2f8be0">Builder</span></h1>
+    <p>Building a website used to require learning how to code, but those days are in the past. Now, anybody can easily create a new website using a website builder.
+
+        Whether you own a small business or you are looking to create your own blog, website builders make it so you don’t have to hire a web designer to have a professionally designed site. If you are wondering, “What is a website builder?” you have come to the right place.
+
+        But, hearing that website builders are easy to use doesn’t mean you just automatically know what a website builder is, or how one works. Website builders make it easy for users to make their own website with little effort or coding skills. By using this platform, anyone can achieve a professionally designed site without using a web designer.
+
+        If you’re ready to get your website off the ground, but are stuck at the step of figuring out how to use a website builder, we walk you through the main steps you need to know.</p>
+</div>
+<!----------------------------------------|HTML - live editor|------------------------------------>
+<h1 id="HTMLEDIT"><span class="HTMLEdit">HTML</span> live <span class="HTMLEdit">code</span> editor </h1>
+
+
+<div id="html_panel" >
+
+    <div id="editor" hidden>
+    </div>
+
+    <iframe id='iframe' frameBorder="0" >
+    </iframe>
+</div>
+</div>
+
+
+<div class="contact">
+    <div style="text-align:center">
+        <h2>Contact Us</h2>
+        <p>Leave to us any message !!!</p>
+    </div>
+    <div class="row">
+
+        <div class="center" id="message">
+            <form style="align-content: center;">
+                <label for="fname" class="form_content">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name.." style="">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="Bahrain">Bahrain</option>
+                    <option value="United emirates ">United emirates </option>
+                    <option value="Turkey">Turkey </option>
+                </select>
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                <input type="submit" value="Submit" style="align-items: center">
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- footer top -->
+<div class="footer-bottom">
+    <div class="container">
+        <div class="col-md-12">
+            <p style="text-align: center;color:white ; font-weight: bold">Copyright © 2020 Younis alaradi / University of Bahrain [ IT trainee group ] [ Instruction " MR . ALI HASSAN " ] . </p>
+        </div>
+    </div>
+</div>
+</footer>
+<!------------------------------------------| end - html live editor | ---------------------------------------->
+
+<script src="Drag_DropFunctions.js">
+</script>
+<section>
+
+</section>
+<!------------------------------------------------------------Drag - Drop section ------------------------------------------------------------------->
+<script src="ckeditor/ckeditor.js"></script>
+<!-------|text editor|--------->
+<script>
+    CKEDITOR.replace('content')
+</script>
+<!------- | end - text editor |------->
+
+<!---------------|HTML - live editor |------------------>
+<script>
+
+    function displayCode ()
+    {
+        document.getElementById('container').style.display="inline-block";
+    }
+    function update()
+    {
+        var idoc = document.getElementById('iframe').contentWindow.document;
+
+        idoc.open();
+        idoc.write(editor.getValue());
+        idoc.close();
+    }
+
+    function setupEditor()
+    {
+        window.editor = ace.edit("editor");
+        editor.setTheme("ace/theme/monokai");
+        editor.getSession().setMode("ace/mode/html");
+        editor.setValue(`<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+</body>
+
+</html>`,1); //1 = moves cursor to end
+
+        editor.getSession().on('change', function() {
+            update();
+        });
+
+        editor.focus();
+
+
+        editor.setOptions({
+            fontSize: "16pt",
+            showLineNumbers: false,
+            showGutter: false,
+            vScrollBarAlwaysVisible:true,
+            enableBasicAutocompletion: false, enableLiveAutocompletion: false
+        });
+
+        editor.setShowPrintMargin(false);
+        editor.setBehavioursEnabled(false);
+    }
+
+    setupEditor();
+    update();
+
+</script>
+<!-------------------------------------------------------------------------|WEBSITE ANIMATION |-------------------------------------------------------------------->
+
+<script>
+
+    anime({
+        targets: '.logo',
+        translateX: 250,
+        duration: 3000,
+        loop: true
+    });
+    var relativeEl = document.querySelector('.aboutText');
+    relativeEl.style.transform = 'translateX(100px)';
+    function rotate ()
+    {
+        anime({
+            targets: '.aboutlist',
+            translateX: {
+                value: '*=2.5', // 100px * 2.5 = '250px'
+                duration: 1000
+            },
+            width: {
+                value: '-=20px', // 28 - 20 = '8px'
+                duration: 1800,
+                easing: 'easeInOutSine'
+            },
+            rotate: {
+                value: '+=2turn', // 0 + 2 = '2turn'
+                duration: 1800,
+                easing: 'easeInOutSine'
+            },
+            direction: 'alternate'
+        });
+
+    }
+
+    anime({
+        targets: '.aboutText',
+        translateX: {
+            value: '*=2.5', // 100px * 2.5 = '250px'
+            duration: 1000
+        },
+        width: {
+            value: '-=20px', // 28 - 20 = '8px'
+            duration: 1800,
+            easing: 'easeInOutSine'
+        },
+        rotate: {
+            value: '+=2turn', // 0 + 2 = '2turn'
+            duration: 1800,
+            easing: 'easeInOutSine'
+        },
+        direction: 'alternate'
+    });
+    var animation = anime({
+        targets: '.logo',
+        translateX: 270,
+        direction: 'alternate',
+        loop: true,
+        easing: 'easeInOutQuad',
+        autoplay: false
+    });
+
+    function loop(t) {
+        animation.tick(t);
+        customRAF = requestAnimationFrame(loop);
+    }
+
+    requestAnimationFrame(loop);
+
+    var anime1 = anime({
+        targets: '.footer-bottom',
+        translateX: 270,
+        direction: 'alternate',
+        loop: true,
+        easing: 'easeInOutQuad',
+        autoplay: false
+    });
+
+    function loop(t) {
+        anime1.tick(t);
+        customRAF = requestAnimationFrame(loop);
+    }
+
+    requestAnimationFrame(loop);
+</script>
+<!------------------------------------------------------------------------| END - WEBSITE ANIMATIONS |--------------------------------------------------------------------->
+
+
+</body>
+</html>
